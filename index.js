@@ -1,6 +1,6 @@
 function dwarfRollCall(dwarves) {
   var order = []; 
-  for (var i = 0; i<dwarves.length; i++){
+  for (var i = dwarves.length/2; i<dwarves.length; i++){
    order += `${(i+1)}. ${dwarves[i]} `; 
   }
   return order;  
@@ -36,3 +36,20 @@ function findTheCheese (foods) {
   } 
   return "no cheese!";
 }
+
+function wordsStartsWithB(words){
+  var wordWithB = []; 
+
+for (var i= 0; i < words.length ; i++){ 
+  if( words[i].startsWith('b') ){
+    wordWithB.push(words[i]) }
+}
+  return wordWithB 
+}
+
+// 'bob'.startsWith('b') => true
+// 'sally'.startsWith('b') => false
+
+// startsWithB(['bob', 'sally', 'jane']) => ['bob']
+// startsWithB(['bob', 'brian', 'sally']) => ['bob', 'brian']
+// startsWithB(['sally', 'jane']) => []
