@@ -41,7 +41,7 @@ function wordsStartsWithB(words){
   var wordWithB = []; 
 
 for (var i= 0; i < words.length ; i++){ 
-  if( words[i].startsWith('b') ){
+  if( startwords[i].sWith('b') ){
     wordWithB.push(words[i]) }
 }
   return wordWithB 
